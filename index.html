@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <style>
+        th, td, p, input {
+            font:14px Verdana;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+        }
+    </style>
+
+    <script src="app.js"></script>
+</head>
+<body onload="LoadJsonPlayers()">
+
+    <input type="text" id="txtDatos" value=""/>
+    <input type="submit" id="btnConsultar" value="Consultar" onclick="Filtro()"/>
+    <input type="submit" id="btnLimpiar" value="Limpiar" onclick="Limpiar()"/>
+
+    <br/>
+    <input type="hidden" id="valDatos" value="" />
+    <p id="showData"></p>
+
+</body>
+</html>
